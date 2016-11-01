@@ -68,7 +68,7 @@ Markdown 介绍轻量级标记语言（html、xml），2004 年被 John Gruber �
     <link href="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.css" type="text/css" rel="stylesheet" />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/blog/css/style.css">
 
     <!-- Google Analytics -->
     
@@ -89,25 +89,25 @@ Markdown 介绍轻量级标记语言（html、xml），2004 年被 John Gruber �
         <ul>
             
             <li class="menu-item">
-                <a href="/">
+                <a href="/blog/">
                     Home
                 </a>
             </li>
             
             <li class="menu-item">
-                <a href="/archives">
+                <a href="/blog/archives">
                     Archives
                 </a>
             </li>
             
             <li class="menu-item">
-                <a href="/about.html">
+                <a href="/blog/about.html">
                     About
                 </a>
             </li>
             
             <li class="menu-item">
-                <a href="/contact.html">
+                <a href="/blog/contact.html">
                     Contact
                 </a>
             </li>
@@ -130,7 +130,7 @@ Markdown 介绍轻量级标记语言（html、xml），2004 年被 John Gruber �
         <!--Title and Logo-->
         <header>
     <div class="logo">
-        <a href="/"><i class="logo-icon fa fa-cube" aria-hidden="true"></i></a>
+        <a href="/blog/"><i class="logo-icon fa fa-cube" aria-hidden="true"></i></a>
         
     </div>
 </header>
@@ -141,7 +141,7 @@ Markdown 介绍轻量级标记语言（html、xml），2004 年被 John Gruber �
 
     <div class="post-header">
         <h1 class="title">
-            <a href="/2015/10/19/markdown和版本控制介绍/">
+            <a href="/blog/2015/10/19/markdown和版本控制介绍/">
                 markdown和版本控制
             </a>
         </h1>
@@ -149,7 +149,7 @@ Markdown 介绍轻量级标记语言（html、xml），2004 年被 John Gruber �
             
                 <span class="date">2015-10-19</span>
             
-            <a href="#disqus_thread" class="comments">Comments</a>
+            <a href="#disqus_thread" class="comments">Kommentare</a>
             
         </div>
     </div>
@@ -168,11 +168,6 @@ Markdown 介绍轻量级标记语言（html、xml），2004 年被 John Gruber �
 <p>专注写作，提高生产力</p>
 </blockquote>
 <h3 id="Markdown-介绍"><a href="#Markdown-介绍" class="headerlink" title="Markdown 介绍"></a>Markdown 介绍</h3><p>轻量级标记语言（html、xml），2004 年被 <code>John Gruber</code> 创造，<br>它允许人们“使用易读易写的纯文本格式编写文档”，<br>Markdown 最重要的设计就是可读性，<br>Markdown 可以选择性的转换为 HTML 文档格式，<br>很多网站目前都使用了 Markdown 或者其变种，例如Github、简书等大型社区。</p>
-<p>下面是一个 demo：</p>
-<p>markdown 源文档：</p>
-<p><img src="../../img/md.png" alt="markdown"></p>
-<p>转换过后的 HTML：</p>
-<p><img src="../../img/html.png" alt="markdown - html"></p>
 <h3 id="Markdown-的优点"><a href="#Markdown-的优点" class="headerlink" title="Markdown 的优点"></a>Markdown 的优点</h3><ul>
 <li>纯文本，所以兼容性极强，可以用所有文本编辑器打开</li>
 <li>专注于文字写作而不是排版</li>
@@ -289,7 +284,6 @@ Markdown 介绍轻量级标记语言（html、xml），2004 年被 John Gruber �
 <p>想删除一个段落，又怕将来想恢复找不回来怎么办？</p>
 <p>有办法，先把当前文件“另存为……”一个新的Word文件，再接着改，</p>
 <p>改到一定程度，再“另存为……”一个新文件，这样一直改下去，最后你的Word文档变成了这样：</p>
-<p><img src="../../img/word.jpg" alt="版本管理 - word"></p>
 <p>过了一周，你想找回被删除的文字，但是已经记不清删除前保存在哪个文件里了，只好一个一个文件去找，真麻烦。</p>
 <p>看着一堆乱七八糟的文件，想保留最新的一个，然后把其他的删掉，又怕哪天会用上，还不敢删，真郁闷。</p>
 <h3 id="问题2：多人协作"><a href="#问题2：多人协作" class="headerlink" title="问题2：多人协作"></a>问题2：多人协作</h3><p>更要命的是，有些部分需要你的财务同事帮助填写，<br>于是你把文件Copy到U盘里给她（也可能通过Email发送一份给她），<br>然后，你继续修改Word文件。<br>一天后，同事再把Word文件传给你，此时，你必须想想，<br>发给她之后到你收到她的文件期间，你作了哪些改动，得把你的改动和她的部分合并，真困难。</p>
@@ -306,7 +300,6 @@ Markdown 介绍轻量级标记语言（html、xml），2004 年被 John Gruber �
 <h3 id="版本管理分类"><a href="#版本管理分类" class="headerlink" title="版本管理分类"></a>版本管理分类</h3><p>版本管理分为集中式版本管理和分布式版本管理，这两种方式有什么差异，我们接下来一一介绍。</p>
 <h3 id="集中式版本控制-SVN"><a href="#集中式版本控制-SVN" class="headerlink" title="集中式版本控制 - SVN"></a>集中式版本控制 - SVN</h3><p>SVN 全称 Apache Subversion，是一个开放源代码的集中式版本管理系统。<br>在 2000 年由 CollabNet 开发，现已发展成为 Apache 软件基金会的一个项目。</p>
 <h3 id="集中式：SVN"><a href="#集中式：SVN" class="headerlink" title="集中式：SVN"></a>集中式：SVN</h3><p>早期的版本管理就是以 <code>Apache Subversion</code> 为代表的集中式版本管理，<br>如下图所示将仓库集中存放在服务器之中，所以只有一个仓库。<br>这就是为什么这种版本管理系统会被称作集中式版本管理。</p>
-<p><img src="../../img/svn.png" alt="集中式版本管理 - SVN"></p>
 <p>集中式版本管理将所有的数据集中存放在服务器中，这是有便于统一管理的优点。</p>
 <p>但是一旦开发者所处的环境不能连接服务器，就无法获取最新源代码，开发也就无法进行。</p>
 <p>服务器宕机时也是同样的道理，而且万一服务器故障导致数据丢失，<br>恐怕开发者就再也见不到最新的源代码了。</p>
@@ -322,8 +315,7 @@ Markdown 介绍轻量级标记语言（html、xml），2004 年被 John Gruber �
 <li>提交（commit）：当你已经修改了代码，就需要 commit 到 repository</li>
 <li>更新（update）：当你已经 checkout 了一份源代码，Update 一下就可以和 repository 上的源代码同步，你手上的代码就会有最新的变更</li>
 </ul>
-<h3 id="使用-VisualSVN-搭建-SVN-服务器"><a href="#使用-VisualSVN-搭建-SVN-服务器" class="headerlink" title="使用 VisualSVN 搭建 SVN 服务器"></a>使用 VisualSVN 搭建 SVN 服务器</h3><p><a href="https://www.visualsvn.com/" target="_blank" rel="external"><img src="../../img/visualsvn.jpg" alt="VisualSVN"></a></p>
-<p>SVN 服务器：运行 Subversion 服务的计算机。</p>
+<h3 id="使用-VisualSVN-搭建-SVN-服务器"><a href="#使用-VisualSVN-搭建-SVN-服务器" class="headerlink" title="使用 VisualSVN 搭建 SVN 服务器"></a>使用 VisualSVN 搭建 SVN 服务器</h3><p>SVN 服务器：运行 Subversion 服务的计算机。</p>
 <p>SVN服务器分为命令行工具和图形化工具，<br>为了方便，我们这里使用比较流行的图形化工具 <a href="https://www.visualsvn.com/" target="_blank" rel="external">VisualSVN</a></p>
 <p>安装完毕之后，基本使用流程如下：</p>
 <ul>
@@ -331,8 +323,7 @@ Markdown 介绍轻量级标记语言（html、xml），2004 年被 John Gruber �
 <li>创建版本仓库</li>
 <li>设定用户权限</li>
 </ul>
-<h3 id="使用-TortoiseSVN-作为-SVN-客户端"><a href="#使用-TortoiseSVN-作为-SVN-客户端" class="headerlink" title="使用 TortoiseSVN 作为 SVN 客户端"></a>使用 TortoiseSVN 作为 SVN 客户端</h3><p><a href="https://tortoisesvn.net/" target="_blank" rel="external"><img src="../../img/tortoisesvn.png" alt="TortoiseSVN"></a></p>
-<p>SVN 客户端：用户通过SVN客户端同SVN服务器交互</p>
+<h3 id="使用-TortoiseSVN-作为-SVN-客户端"><a href="#使用-TortoiseSVN-作为-SVN-客户端" class="headerlink" title="使用 TortoiseSVN 作为 SVN 客户端"></a>使用 TortoiseSVN 作为 SVN 客户端</h3><p>SVN 客户端：用户通过SVN客户端同SVN服务器交互</p>
 <p>SVN 客户端也分为命令行工具和图形化工具，这里我们使用最流行的 <a href="https://tortoisesvn.net/" target="_blank" rel="external">TortoiseSVN</a></p>
 <h3 id="TortoiseSVN-客户端基本操作流程"><a href="#TortoiseSVN-客户端基本操作流程" class="headerlink" title="TortoiseSVN 客户端基本操作流程"></a>TortoiseSVN 客户端基本操作流程</h3><ul>
 <li>检出项目：checkout</li>
@@ -384,7 +375,8 @@ Markdown 介绍轻量级标记语言（html、xml），2004 年被 John Gruber �
 <li>更新最新源代码 update</li>
 <li>提交修改 commit</li>
 </ul>
-<h2 id="That’s-all"><a href="#That’s-all" class="headerlink" title="That’s all."></a>That’s all.</h2><hr>
+<h2 id="That’s-all"><a href="#That’s-all" class="headerlink" title="That’s all."></a>That’s all.</h2><p>   If you have better ideas , please Email me : <strong>caoxiangx@163.com</strong></p>
+<hr>
 
     </div>
 
@@ -421,7 +413,7 @@ Markdown 介绍轻量级标记语言（html、xml），2004 年被 John Gruber �
         <ul>
             
             <li>
-                <a class="footer-post" href="/2015/10/19/markdown和版本控制介绍/">markdown和版本控制</a>
+                <a class="footer-post" href="/blog/2015/10/19/markdown和版本控制介绍/">markdown和版本控制</a>
             </li>
             
         </ul>
@@ -549,7 +541,7 @@ Markdown 介绍轻量级标记语言（html、xml），2004 年被 John Gruber �
 <script src="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
 
 <!-- Custom JavaScript -->
-<script src="/js/main.js"></script>
+<script src="/blog/js/main.js"></script>
 
 <!-- Disqus Comments -->
 
